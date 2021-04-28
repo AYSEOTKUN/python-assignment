@@ -1,0 +1,23 @@
+a = input("Bir sayý giriniz: ").strip () 
+if a.isdigit(): 
+    rakam = int(a)  
+    liste = list(str(a)) 
+    basamak = len(liste) 
+    toplam = 0 
+    for i in liste: 
+      toplam = toplam + (pow(int(i), basamak)) 
+    if toplam == rakam: 
+      print (a, "sayýsý Armstrong sayýdýr.") 
+    else: 
+      print (a, "sayýsý Armstrong sayý DEÐÝLDÝR.") 
+else: 
+  print ("lütfen uygun formatta giriniz !!")
+
+Bir sayý giriniz: 1350
+1350 sayýsý Armstrong sayý DEÐÝLDÝR.
+
+Bir sayý giriniz: 34.5
+lütfen uygun formatta giriniz !!
+
+Bir sayý giriniz: 7
+7 sayýsý Armstrong sayýdýr.
